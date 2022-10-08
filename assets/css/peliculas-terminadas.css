@@ -1,0 +1,77 @@
+.hero-title-terminadas {
+  background-color: var(--color-red);
+  padding: 0.8rem;
+  color: #fff;
+}
+
+/* SINOPSIS   */
+
+.card-terminadas {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.title-peliculas-terminadas {
+  color: var(--color-red);
+  font-size: 2.5rem;
+  margin-block: 1rem;
+  text-transform: uppercase;
+}
+
+.titulo-sinopsis-terminadas {
+  background-color: var(--color-grey);
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.text-sinopsis-terminadas {
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+/* FICHA TECNICA */
+
+.ficha {
+  margin-block: 1rem;
+  font-size: 1.3rem;
+}
+
+.titulo-ficha {
+  color: var(--color-red);
+}
+
+/* GALERIA */
+
+.container-galeria {
+  padding-block: 1rem;
+}
+
+.thumbnails {
+  display: flex;
+  margin: 1rem auto 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  list-style: none;
+  margin: 0 0.2rem;
+  cursor: pointer;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.thumbnail {
+  opacity: 0.3;
+}
+
+.thumbnail.is-active {
+  opacity: 1;
+}

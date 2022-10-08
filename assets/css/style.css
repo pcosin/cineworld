@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import "sobre-mi.css";
+@import '@splidejs/splide/css';
 
 :root {
   --color-bg: #323232;
@@ -157,12 +157,6 @@ textarea {
   background-color: var(--color-bg);
 }
 
-/* .navbar-edit {
-  width: min(100% - 2rem, 1440px);
-  margin-inline: auto;
-  background-color: var(--color-bg);
-} */
-
 .nav-link {
   color: #fff !important;
   font-size: 1.7rem !important;
@@ -216,8 +210,6 @@ textarea {
   background-size: cover;
 }
 
-.container-main {
-}
 
 .facebbok-container {
   padding-block: 2rem;
