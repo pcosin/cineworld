@@ -12,11 +12,15 @@
   gap: 1rem;
 }
 
-.cards-terminadas .card > img {
+.cards-terminadas .card {
   max-width: 230px;
 }
 
-.cards-peiliculas-desarrollo .card > img {
+.cards-terminadas .card > img {
+  min-height: 300px;
+}
+
+.cards-peiliculas-desarrollo .card {
   max-width: 230px;
 }
 
@@ -48,8 +52,9 @@
   padding: 1rem;
   font-family: cabin, sans-serif;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   min-width: 230px;
+  text-align: center;
 }
 .btn-terminadas {
   display: inline-block;
@@ -81,11 +86,11 @@
 }
 
 @media (max-width: 600px) {
-  .cards-peiliculas-desarrollo .card > img {
+  .cards-peiliculas-desarrollo .card {
     max-width: none;
   }
 
-  .cards-terminadas .card > img {
+  .cards-terminadas .card {
     max-width: none;
   }
 }

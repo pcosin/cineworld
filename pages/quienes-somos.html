@@ -94,14 +94,111 @@
         </div>
       </section>
       <div class="names">
-        <div class="names-inside">
-          <img src="../assets/images/diego.png" alt="" />
-          <h3>Diego Corsini</h3>
-        </div>
-        <div class="names-inside">
-          <img src="../assets/images/mariana.png" alt="" />
-          <h3>Mariana Cangas</h3>
-        </div>
+        <button class="btn btn-open" id="btnDiego">
+          <div class="names-inside">
+            <img src="../assets/images/diego.png" alt="" />
+            <h3>Diego Corsini</h3>
+          </div>
+        </button>
+        <dialog class="modal" id="modal-diego">
+          <p>
+            DIEGO CORSINI es Director, Productor y Guionista de Cine y TV. Graduado con honores en
+            la carrera de Diseño de Imagen y Sonido de la UBA y también como Productor
+            Cinematográfico en la ENERC. Socio fundador de la empresa Cineworld y previamente
+            también de Sudestada Cine, con las que ha realizado numerosas piezas audiovisuales,
+            desde largometrajes y series de TV hasta Publicidades y Videoclips.
+          </p>
+          <p>
+            A la fecha tiene 5 largometrajes escritos y dirigidos y 16 producidos, entre las que se
+            destacan “Solo el Amor” (actualmente en Netflix), la coproducción Hispano-Argentina
+            “Pasaje de Vida” y “Solos en la Ciudad” (ambas en Amazon Prime Video), "Artax, un nuevo
+            comienzo", “Lo que nunca nos dijimos” coproducida con México , “Candy Bar” con
+            Venezuela, “El Encanto” y la recientemente estrenada "Punto de no Retorno".
+          </p>
+          <p>
+            Es miembro de la Comisión Directiva de la Academia de Cine de Argentina y Secretario
+            General de la Plataforma Nuevos Realizadores (PNR) y de APIMA.
+          </p>
+          <p>
+            Es representante de la prestigiosa Escuela de San Antonio de los Baños (EICTV) de Cuba.
+            Se desempeña como profesor desde hace más de 20 años, actualmente en el Instituto del
+            Cine Madrid, Factoría del Guión, la EICTV y en la renombrada Universidad de Buenos
+            Aires.
+          </p>
+          <p>
+            Ha sido jurado y asesor en numerosos festivales y Labs internacionales, entre los que
+            podemos mencionar Bolivia Lab, Panamá Film Lab, BaqLab y Nuevas Miradas del Festival de
+            La Habana. Ha dirigido los laboratorios de desarrollo de proyecto PNR-LAB y APIMA-LAB.
+          </p>
+          <button class="btn btn-cerrar">Cerrar</button>
+        </dialog>
+        <button class="btn btn-open marianaButton" id="btnMariana">
+          <div class="names-inside">
+            <img src="../assets/images/mariana.png" alt="" />
+            <h3>Mariana Cangas</h3>
+          </div>
+        </button>
+        <dialog class="modal" id="modal-mariana">
+          <p>
+            Mariana Cangas es Productora y Directora de Cine y TV, graduada de la carrera de Diseño
+            de Imagen y Sonido de la Universidad de Buenos Aires.
+          </p>
+          <p>
+            Socia fundadora de CINEWORLD SRL con un perfil orientado especialmente a las
+            coproducciones iberoamericanas.
+          </p>
+          <p>
+            Dirigió y produjo 4 capítulos sobre celebraciones argentinas de la serie “EXPRESO SUR”,
+            coproducida por ocho países miembros de UNASUR.
+          </p>
+          <p>
+            Es la Productora y Productora Ejecutiva de los largometrajes “SOLO EL AMOR”, comedia
+            romántica musical protagonizado por Franco Masini, dirigida por Diego Corsini y Andy
+            Caballero estrenada en más de 50 salas en octubre del 2018, actualmente en Netflix;
+          </p>
+
+          <p>
+            “EL ENCANTO” de Juan Sasiaín y Ezequiel Tronconi drama romántico protagonizado por
+            Mónica Antonopulos estrenado en julio de 2020, actualmente en Flow;
+          </p>
+          <p>
+            “PASAJE DE VIDA” coproducción argentino-española con un exitoso recorrido en festivales,
+            protagonizado por Chino Darín, Miguel Ángel Solá y gran elenco, dirigido por Diego
+            Corsini y estrenada en más de 50 salas en 2015; tras ser una de las primeras películas
+            argentinas en Netflix, actualmente se encuentra en Amazon Prime Video, Filmin, Flixolé y
+            Flow;
+          </p>
+          <p>
+            “ENTRE RÍOS, TODO LO QUE NO DIJIMOS” de Nelson Schmunk, cuya WorldPremiere fue en el
+            BAFICI y estrenada comercialmente en 2014;
+          </p>
+          <p>
+            “LO QUE NUNCA NOS DIJIMOS”, coproducción mexicano-argentina dirigida por Sebastián
+            Sánchez Amunátegui, ganadora del premio a la mejor música en el Festival Internacional
+            de Cine de Mar del Plata, estrenada en numerosas salas en 2016;
+          </p>
+          <p>También produjo los documentales:</p>
+          <p>
+            “Candy Bar”, coproducción venezolana-argentina dirigida por Alejandra Szeplaki con gran
+            recorrido por festivales a nivel internacional, estrenada en salas en 2019;
+          </p>
+          <p>
+            “Punto de no Retorno”, dirigida por Diego Corsini y Nicolás Capelli, ganadora de varios
+            premios a nivel mundial por la forma en que aborda la problemática de cambio climático,
+            estrenada en Argentina en el 2020.
+          </p>
+          <p>
+            Se desempeña como profesora desde hace más de 15 años, actualmente en instituciones como
+            la Universidad de Buenos Aires y la Factoría del Guión. Ha sido jurado y asesora en Labs
+            y festivales internacionales en donde también suele dictar masterclasses sobre
+            producción.
+          </p>
+          <p>
+            Ha realizado también la producción ejecutiva y dirección de producción de diversas
+            publicidades y series para plataformas de primera línea.
+          </p>
+          <button class="btn btn-cerrar">Cerrar</button>
+        </dialog>
       </div>
     </main>
 
@@ -144,10 +241,37 @@
     <script src="https://kit.fontawesome.com/aa037f8851.js" crossorigin="anonymous"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
+    <!-- <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
+
+    <script type="text/javascript">
+      const buttonOpenDiego = document.getElementById("btnDiego");
+      const buttonOpenMariana = document.getElementById("btnMariana");
+
+      const modal = document.getElementById("modal-diego");
+      const modal2 = document.getElementById("modal-mariana");
+
+      const buttonCerrar = document.querySelectorAll(".btn-cerrar");
+
+      console.log(buttonCerrar);
+
+      buttonOpenDiego.addEventListener("click", () => {
+        modal.showModal();
+      });
+
+      buttonOpenMariana.addEventListener("click", () => {
+        modal2.showModal();
+      });
+
+      buttonCerrar.forEach((el) => {
+        el.addEventListener("click", () => {
+          modal.close();
+          modal2.close();
+        });
+      });
+    </script>
   </body>
 </html>

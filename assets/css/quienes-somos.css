@@ -38,13 +38,46 @@
 
 .names-inside {
   display: flex;
-  align-items: center;
+}
+
+.names-inside img {
+  max-width: 250px;
+  transform: translateY(-40%);
+  transition: all 0.2s ease-in-out;
+}
+
+.names-inside img:hover {
+  width: 260px;
 }
 
 .names-inside h3 {
   color: #fff;
   text-transform: uppercase;
   font-size: 2rem;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btn-cerrar {
+  background-color: #75000b;
+  border: none;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+}
+
+.modal {
+  padding: 1em;
+  max-width: 65ch;
+}
+
+.modal > p {
+  padding-block: 0.5rem;
+}
+.marianaButton {
+  background-color: #000000;
+  color: #fff;
 }
 
 @media (max-width: 600px) {
