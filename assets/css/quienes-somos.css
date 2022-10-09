@@ -11,7 +11,7 @@
 }
 
 .red-container {
-  background-color: var(--color-red);
+  background-color: rgba(117, 0, 12, 0.6);
   color: #fff;
   padding-inline: 2em;
   margin-inline: auto;
@@ -30,7 +30,7 @@
   max-width: 70rem;
   display: flex;
   justify-content: space-between;
-  background: #000;
+  background-color: #000;
   border: 2px solid #fff;
   max-height: 150px;
   margin-bottom: 5rem;
@@ -62,22 +62,46 @@
 
 .btn-cerrar {
   background-color: #75000b;
-  border: none;
+  border: 2px solid var(--color-red) !important;
+  box-shadow: none !important;
   font-size: 1.1rem;
   padding: 0.5rem;
 }
 
-.modal {
+.modalo {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 5px solid var(--color-red);
   padding: 1em;
-  max-width: 65ch;
+  max-width: 70ch;
 }
 
-.modal > p {
+.modalo > p {
   padding-block: 0.5rem;
 }
 .marianaButton {
   background-color: #000000;
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .names {
+    flex-direction: column;
+    max-height: none;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 0rem;
+  }
+
+  .names-inside {
+    background-color: #000;
+    border: 2px solid #fff;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .names-inside img {
+    transform: none;
+  }
 }
 
 @media (max-width: 600px) {
