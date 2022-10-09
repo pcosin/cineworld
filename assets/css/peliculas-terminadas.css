@@ -30,16 +30,27 @@
   font-size: 1.1rem;
 }
 
+.trailer {
+  cursor: pointer;
+  background-color: #000;
+  color: #FFF;
+  text-decoration: none;
+  padding: .5rem 2rem;
+}
+
 /* FICHA TECNICA */
 
 .ficha {
   margin-block: 1rem;
   font-size: 1.3rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .titulo-ficha {
   color: var(--color-red);
 }
+
 
 /* GALERIA */
 
@@ -74,4 +85,21 @@
 
 .thumbnail.is-active {
   opacity: 1;
+}
+
+
+@media (max-width: 767px) {
+  .ficha {
+    flex-direction: column;
+    gap: none;
+  }
+
+  .ficha p {
+    font-size: 1rem
+  }
+  .card-terminadas {
+    flex-direction: column;
+  }
+
+  
 }

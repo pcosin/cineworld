@@ -1,7 +1,12 @@
+
+/* TITULO */
+
 .hero-title {
   background-color: var(--color-grey);
   padding: 0.8rem;
 }
+
+/* CARDS SIZES*/
 
 .cards {
   display: grid;
@@ -23,16 +28,23 @@
 
 .cards-en-desarrollo .card > img {
   max-width: 400px;
+  max-height: 200px;
   border: 1px solid black;
 }
+
+.cards-video .card {
+  max-width: 350px;
+}
+
+/* .cards-video > .card > img{
+  max-height: 250px;
+} */
 
 .cards-publicidad > .card > img {
   max-width: 300px;
 }
 
-.cards-video > .card > img {
-  max-width: 400px;
-}
+/* CARD */
 
 .card {
   display: flex;
@@ -65,11 +77,15 @@
   padding-inline: 3rem;
   padding-block: 0.5rem;
   margin-top: -1rem;
+  text-decoration: none;
+
 }
 
 .btn-terminadas:hover {
-  margin-top: -0.9rem;
+  margin-top: -0.95rem;
   transition: 0.3s;
+  background-color: var(--color-grey);
+  color: #FFF;
 }
 
 /* ------------------- */
