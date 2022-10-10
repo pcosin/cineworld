@@ -12,6 +12,10 @@
   display: flex;
 }
 
+.card-terminadas * {
+  width: 100%;
+}
+
 .title-peliculas-terminadas {
   color: var(--color-red);
   font-size: 2.5rem;
@@ -66,8 +70,6 @@
 }
 
 .thumbnail {
-  /* width: 120px;
-  height: 120px; */
   overflow: hidden;
   list-style: none;
   margin: 0 0.2rem;

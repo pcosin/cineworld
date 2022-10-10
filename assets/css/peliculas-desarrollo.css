@@ -4,6 +4,12 @@
   margin-block: 2rem;
 }
 
+.hero-title-terminadas {
+  background-color: var(--color-red);
+  padding: 0.8rem;
+  color: #fff;
+}
+
 .titulo-sinpsis {
   background-color: var(--color-grey);
   color: #fff;
@@ -17,6 +23,10 @@
   display: flex;
 }
 
+.card-desarrollo * {
+  width: 100%;
+}
+
 .img-desarrollo {
   padding: 1rem;
 }
@@ -26,6 +36,8 @@
   padding: 1rem;
   font-size: 1.1rem;
 }
+
+
 
 @media (max-width: 767px) {
   .card-desarrollo {

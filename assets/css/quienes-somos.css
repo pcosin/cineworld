@@ -130,3 +130,16 @@ dialog[open] {
     padding-inline: 0.5rem;
   }
 }
+
+
+@media (max-width: 425px) {
+  
+  .names-inside img{
+   max-width: 100px;
+  }
+
+  .names-inside h3 {
+    font-size: 1.3rem;
+
+  }
+}

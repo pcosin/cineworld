@@ -10,6 +10,6 @@ const series = [
     id: 2,
     title: "Impresos",
     img: "/assets/images/impresos/impresos.webp",
-    description: "",
+    route: "impresos.html",
   },
 ];

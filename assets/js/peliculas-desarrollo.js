@@ -11,7 +11,7 @@ const peliculasDesarrollo = [
     title: "Mudanza internacional",
     img: "/assets/images/mundanza-internacional/mundanza-internacional.webp",
     description: "",
-    route: "mundanza-internacional.html",
+    route: "mudanza-internacional.html",
   },
   {
     id: 3,
@@ -24,6 +24,6 @@ const peliculasDesarrollo = [
     id: 4,
     title: "Las tres vidas de Carlos Slepoy",
     img: "/assets/images/carlos/carlos.webp",
-    description: "carlos.html",
+    route: "carlos.html",
   },
 ];

@@ -1,3 +1,23 @@
+<!-- <?php
+    // START SAFARI SESSION FIX
+    session_start();
+    $page_url = "http://www.facebook.com/pages/.../...?sk=app_...";
+    if (isset($_GET["start_session"]))
+        die(header("Location:" . $page_url));
+
+    if (!isset($_GET["sid"]))
+        die(header("Location:?sid=" . session_id()));
+    $sid = session_id();
+    if (empty($sid) || $_GET["sid"] != $sid):
+?>
+   <script>
+        top.window.location="?start_session=true";
+    </script>
+<?php
+    endif;
+    // END SAFARI SESSION FIX
+?> -->
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
