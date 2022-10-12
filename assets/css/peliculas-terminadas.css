@@ -34,12 +34,31 @@
   font-size: 1.1rem;
 }
 
+.disponible {
+  margin-block: 2rem;
+}
+.disponible a img {
+  max-width: 60px;
+}
+.disponible_films {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
 .trailer {
   cursor: pointer;
   background-color: #000;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
+}
+
+/* SELECCION OFICIAL */
+
+.container-seleccion h4 {
+  padding: 0.5rem;
+  text-align: center;
 }
 
 /* FICHA TECNICA */
@@ -51,10 +70,34 @@
   gap: 1rem;
 }
 
+.ficha > * {
+  width: 100%;
+}
+
 .titulo-ficha {
   color: var(--color-red);
 }
 
+/* TRAILER */
+
+.container-trailer {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 40%;
+}
+
+.container-trailer iframe {
+  padding-block: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 /* GALERIA */
 
@@ -78,7 +121,7 @@
 
 .thumbnail img {
   width: 100%;
-  height: auto;
+  max-height: 200px;
 }
 
 .thumbnail {
@@ -89,7 +132,6 @@
   opacity: 1;
 }
 
-
 @media (max-width: 767px) {
   .ficha {
     flex-direction: column;
@@ -97,11 +139,13 @@
   }
 
   .ficha p {
-    font-size: 1rem
+    font-size: 1rem;
   }
   .card-terminadas {
     flex-direction: column;
   }
 
-  
+  .trailer iframe {
+    max-width: 320px;
+  }
 }

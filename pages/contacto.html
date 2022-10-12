@@ -7,7 +7,6 @@
 
     <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico" />
 
-
     <!-- Estilos de css -->
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/contacto.css" />
@@ -67,18 +66,42 @@
                   Producciones
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="./el-sueno-de-emma.html">El sueño de Emma</a></li>
+                  <li>
+                    <a class="dropdown-item" href="./el-sueno-de-emma.html">El sueño de Emma</a>
+                  </li>
                   <li><a class="dropdown-item" href="./el-encanto.html">El encanto</a></li>
                   <li><a class="dropdown-item" href="./solo-el-amor.html">Solo el amor</a></li>
-                  <li><a class="dropdown-item" href="./punto-de-no-retorno.html">Punto de no retorno</a></li>
-                  <li><a class="dropdown-item" href="./lo-que-nunca-nos-dijimos.html">Lo que nunca nos dijimos</a></li>
+                  <li>
+                    <a class="dropdown-item" href="./punto-de-no-retorno.html"
+                      >Punto de no retorno</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./lo-que-nunca-nos-dijimos.html"
+                      >Lo que nunca nos dijimos</a
+                    >
+                  </li>
                   <li><a class="dropdown-item" href="./pasaje-de-vida.html">Pasaje de Vida</a></li>
                   <li><a class="dropdown-item" href="./entre-rios.html">Entre Ríos</a></li>
-                  <li><a class="dropdown-item" href="./solos-en-la-ciudad.html">Solos en la ciudad</a></li>
-                  <li><a class="dropdown-item" href="./una-semana-en-madrid.html">Una Semana en Madrid</a></li>
-                  <li><a class="dropdown-item" href="./mudanza-internacional.html">Mudanza Internacional</a></li>
+                  <li>
+                    <a class="dropdown-item" href="./solos-en-la-ciudad.html">Solos en la ciudad</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./una-semana-en-madrid.html"
+                      >Una Semana en Madrid</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./mudanza-internacional.html"
+                      >Mudanza Internacional</a
+                    >
+                  </li>
                   <li><a class="dropdown-item" href="./noches-blancas.html">Noches blancas</a></li>
-                  <li><a class="dropdown-item" href="./carlos.html">Las tres vidas de Carlos Slepoy</a></li>
+                  <li>
+                    <a class="dropdown-item" href="./carlos.html"
+                      >Las tres vidas de Carlos Slepoy</a
+                    >
+                  </li>
                   <li><a class="dropdown-item" href="./mythos.html">Mythos</a></li>
                   <li><a class="dropdown-item" href="./impresos.html">Impresos</a></li>
                 </ul>
@@ -100,7 +123,7 @@
           <h3 class="titulo-form text-center">
             Dejanos tu consulta y nos comunicaremos a la brevedad.<br />Muchas gracias!
           </h3>
-          <form action="">
+          <form action="POST">
             <div class="form-item">
               <label for="nombre">Nombre:</label>
               <input type="text" name="nombre" placeholder="Introducir nombre" required />
@@ -119,7 +142,7 @@
                 placeholder="Introducir su mensaje"
               ></textarea>
             </div>
-            <button class="btn-contacto" type="submit">Enviar</button>
+            <button class="btn-contacto" type="submit" data-btn-contacto>Enviar</button>
           </form>
         </div>
       </section>
@@ -170,6 +193,8 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="./assets/index.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script src="../assets/js/contact.js"></script>
   </body>
 </html>
