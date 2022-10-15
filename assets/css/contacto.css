@@ -50,11 +50,16 @@ textarea {
   padding: 0.375rem;
   outline: none;
   border: 1px solid;
+  width: 100%;
 }
 
 input,
 textarea::placeholder {
   font-style: italic;
+}
+
+textarea {
+  resize: none;
 }
 
 .btn-contacto {
@@ -67,4 +72,17 @@ textarea::placeholder {
   margin-left: 0.6rem;
   font-weight: 700;
   padding-inline: 1.5rem;
+}
+
+.inside-input {
+  position: relative;
+}
+
+.error-icon,
+.succes-icon {
+  display: none;
+  position: absolute;
+  right: 0;
+  padding: 10px 10px;
+  color: #30a3f1;
 }
