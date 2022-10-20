@@ -1,8 +1,5 @@
 .body-quienes-somos {
-  background-image: url(../images/quienes.webp);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #000;
 }
 
 .red-container-wrapper {
@@ -11,7 +8,6 @@
 }
 
 .red-container {
-  background-color: rgba(117, 0, 12, 0.6);
   color: #fff;
   padding-inline: 2em;
   margin-inline: auto;
@@ -56,15 +52,14 @@
   font-size: 2rem;
 }
 
-
 /* MODAL */
 
 .modalo {
   background-color: rgba(255, 255, 255, 0.9);
-  border: 5px solid var(--color-red);
+  border: 5px solid #000;
   padding: 1em;
   max-width: 70ch;
-  transition: all .5s ease-in-out; 
+  transition: all 0.5s ease-in-out;
 }
 
 .modalo > p {
@@ -79,12 +74,14 @@
   cursor: pointer;
 }
 
-button:focus {outline:0 !important;
-  box-shadow: none !important;}
+button:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
 
 .btn-cerrar {
-  background-color: #75000b;
-  border: 2px solid var(--color-red) !important;
+  background-color: #333;
+  border: 2px solid #000 !important;
   box-shadow: none !important;
   font-size: 1.1rem;
   padding: 0.5rem;
@@ -92,12 +89,12 @@ button:focus {outline:0 !important;
 dialog[open] {
   animation: show 1s ease normal;
 }
-@keyframes show{
+@keyframes show {
   from {
-      transform: translateY(-110%);
+    transform: translateY(-110%);
   }
   to {
-      transform: translateY(0%);
+    transform: translateY(0%);
   }
 }
 
@@ -131,15 +128,12 @@ dialog[open] {
   }
 }
 
-
 @media (max-width: 425px) {
-  
-  .names-inside img{
-   max-width: 100px;
+  .names-inside img {
+    max-width: 100px;
   }
 
   .names-inside h3 {
     font-size: 1.3rem;
-
   }
 }

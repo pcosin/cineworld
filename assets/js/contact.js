@@ -28,52 +28,73 @@ const validateForm = (formSelector) => {
 
   const validationOptions = [
     {
-      attribute: 'required',
-      isValid: input => input.value.trim() !== '',
-      errorMessage: (input, label) => `${label.textContent} is required`,
+      attribute: "minlength",
+      isValid: (input) => input.value && input.value.length >= parseInt(input.minLength, 10),
+      errorMessage: (input, label) =>
+        `${label.textContent} debe tener al menos ${input.minLength} caracteres`,
     },
+    {
+      attribute: "pattern",
+      isValid: (input) => {
+        const patternRegex = new RegExp(input.pattern);
+        return patternRegex.test(input.value);
+      },
+      errorMessage: (input, label) => `${label.textContent} no es un email válido`,
+    },
+    {
+      attribute: "required",
+      isValid: (input) => input.value.trim() !== "",
+      errorMessage: (input, label) => `${label.textContent} es obligatorio`,
+    },
+  ];
 
-  ]
-
-  const validateSingleFormGroup = formGroup => {
-    const label = formGroup.querySelector('label');
-    const input = formGroup.querySelector('input, textarea');
-    const errorContainer = formGroup.querySelector('.error');
-    const errorIcon = formGroup.querySelector('.error-icon');
-    const successIcon = formGroup.querySelector('.success-icon');
+  const validateSingleFormGroup = (formGroup) => {
+    const label = formGroup.querySelector("label");
+    const input = formGroup.querySelector("input, textarea");
+    const errorContainer = formGroup.querySelector(".error");
+    const errorIcon = formGroup.querySelector(".error-icon");
+    const successIcon = formGroup.querySelector(".success-icon");
 
     let formGroupError = false;
     for (const option of validationOptions) {
       if (input.hasAttribute(option.attribute) && !option.isValid(input)) {
         errorContainer.textContent = option.errorMessage(input, label);
+        input.classList.add("border-red-700");
+        input.classList.remove("border-green-700");
+        successIcon.classList.add("hidden");
+        errorIcon.classList.remove("hidden");
         formGroupError = true;
-
       }
     }
-    console.log(label, input)
 
     if (!formGroupError) {
-      errorContainer.textContent = '';
-      
+      errorContainer.textContent = "";
+      input.classList.add("border-green-700");
+      input.classList.remove("border-red-700");
+      errorIcon.classList.add("hidden");
+      successIcon.classList.remove("hidden");
     }
-  
-  }
+  };
 
+  formElement.setAttribute("novalidate", "");
 
-  formElement.setAttribute('novalidate', '')
-  formElement.addEventListener('submit', (event) => {
-    event.preventDefault()
-    validateAllFormGroups(formElement)
-  })
+  Array.from(formElement.elements).forEach((element) =>
+    element.addEventListener("blur", (event) => {
+      validateSingleFormGroup(event.srcElement.parentElement.parentElement);
+    })
+  );
+
+  formElement.addEventListener("submit", (event) => {
+    event.preventDefault();
+    validateAllFormGroups(formElement);
+  });
 
   const validateAllFormGroups = (formToValidate) => {
-    const formGroups = Array.from(formToValidate.querySelectorAll('.form-item'))
-    
-    formGroups.forEach(formgroup => {
-      validateSingleFormGroup(formgroup)
-    })
-  }
-
+    const formGroups = Array.from(formToValidate.querySelectorAll(".form-item"));
+    formGroups.forEach((formgroup) => {
+      validateSingleFormGroup(formgroup);
+    });
+  };
 };
 
 validateForm("[data-form]");

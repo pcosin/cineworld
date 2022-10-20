@@ -134,10 +134,10 @@
                   required
                   minlength="4"
                 />
-                <span class="error-icon">
+                <span class="error-icon hidden">
                   <i class="fa-solid fa-circle-exclamation"></i>
                 </span>
-                <span class="succes-icon">
+                <span class="success-icon hidden">
                   <i class="fa-solid fa-circle-check"></i>
                 </span>
               </div>
@@ -146,11 +146,17 @@
             <div class="form-item">
               <label for="email">Email: </label>
               <div class="inside-input">
-                <input type="email" name="email" placeholder="Introducir email" required />
-                <span class="error-icon">
+                <input
+                  pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
+                  type="email"
+                  name="email"
+                  placeholder="Introducir email"
+                  required
+                />
+                <span class="error-icon hidden">
                   <i class="fa-solid fa-circle-exclamation"></i>
                 </span>
-                <span class="succes-icon">
+                <span class="success-icon hidden">
                   <i class="fa-solid fa-circle-check"></i>
                 </span>
               </div>

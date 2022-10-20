@@ -1,8 +1,5 @@
 .body-contacto {
-  background-image: url(../images/contacto-nueva-bn.jpeg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background-color: #000;
 }
 
 .container-contacto {
@@ -78,11 +75,28 @@ textarea {
   position: relative;
 }
 
+.error-icon i {
+  color: red;
+}
+.fa-circle-check {
+  color: green;
+}
+
 .error-icon,
 .succes-icon {
-  display: none;
   position: absolute;
   right: 0;
   padding: 10px 10px;
-  color: #30a3f1;
+}
+
+.hidden {
+  display: none;
+}
+
+.border-red-700 {
+  border: 2px solid red;
+}
+
+.border-green-700 {
+  border: 2px solid green;
 }

@@ -8,9 +8,9 @@ const cardsProducciones = (peliculas, container) => {
   peliculas.forEach((pelicula) => {
     let div = document.createElement("div");
     div.className = "card";
-    div.innerHTML = ` <img class="img-card" src="${pelicula.img}" alt="" />
-                          <h3 class="card-title">${pelicula.title}</h3>
-                          <a href="${pelicula.route}" class="btn-terminadas">Ver más</a>`;
+    div.innerHTML = ` 
+                         
+                          <a class="link-card" href="${pelicula.route}" ><img class="img-card" src="${pelicula.img}" alt="" /></a>`;
 
     container.appendChild(div);
   });
