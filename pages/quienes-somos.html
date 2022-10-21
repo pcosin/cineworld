@@ -7,9 +7,8 @@
 
     <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico" />
 
-
     <!-- Estilos de css -->
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/quienes-somos.css" />
 
     <!-- Estilos de Boostrap 5 -->
@@ -27,7 +26,7 @@
       <nav class="navbar navbar-expand-lg navbar-light container">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html"
-            ><img src="../assets/images/logo.jpg" alt="logo de CINEWORLD"
+            ><img class="logo" src="../assets/images/LOGOCW-B.png" alt="logo de CINEWORLD"
           /></a>
           <button
             class="navbar-toggler"
@@ -56,37 +55,13 @@
                 >
               </li>
 
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="./producciones.html"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  aria-expanded="false"
-                >
+              <li class="nav-item">
+                <a class="nav-link hover-underline-animation" href="./producciones.html">
                   Producciones
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="./el-sueno-de-emma.html">El sueño de Emma</a></li>
-                  <li><a class="dropdown-item" href="./el-encanto.html">El encanto</a></li>
-                  <li><a class="dropdown-item" href="./solo-el-amor.html">Solo el amor</a></li>
-                  <li><a class="dropdown-item" href="./punto-de-no-retorno.html">Punto de no retorno</a></li>
-                  <li><a class="dropdown-item" href="./lo-que-nunca-nos-dijimos.html">Lo que nunca nos dijimos</a></li>
-                  <li><a class="dropdown-item" href="./pasaje-de-vida.html">Pasaje de Vida</a></li>
-                  <li><a class="dropdown-item" href="./entre-rios.html">Entre Ríos</a></li>
-                  <li><a class="dropdown-item" href="./solos-en-la-ciudad.html">Solos en la ciudad</a></li>
-                  <li><a class="dropdown-item" href="./una-semana-en-madrid.html">Una Semana en Madrid</a></li>
-                  <li><a class="dropdown-item" href="./mudanza-internacional.html">Mudanza Internacional</a></li>
-                  <li><a class="dropdown-item" href="./noches-blancas.html">Noches blancas</a></li>
-                  <li><a class="dropdown-item" href="./carlos.html">Las tres vidas de Carlos Slepoy</a></li>
-                  <li><a class="dropdown-item" href="./mythos.html">Mythos</a></li>
-                  <li><a class="dropdown-item" href="./impresos.html">Impresos</a></li>
-                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link hover-underline-animation" href="./contacto.html"
-                  >Contacto</a
-                >
+                <a class="nav-link hover-underline-animation" href="./contacto.html">Contacto</a>
               </li>
             </ul>
           </div>
@@ -153,7 +128,7 @@
             podemos mencionar Bolivia Lab, Panamá Film Lab, BaqLab y Nuevas Miradas del Festival de
             La Habana. Ha dirigido los laboratorios de desarrollo de proyecto PNR-LAB y APIMA-LAB.
           </p>
-          <button class="btn btn-cerrar">Cerrar</button>
+          <a class="btn btn-cerrar">Cerrar</a>
         </dialog>
         <button class="btn btn-open marianaButton" id="btnMariana">
           <div class="names-inside">
@@ -220,9 +195,42 @@
             Ha realizado también la producción ejecutiva y dirección de producción de diversas
             publicidades y series para plataformas de primera línea.
           </p>
-          <button class="btn btn-cerrar">Cerrar</button>
+          <a class="btn btn-cerrar">Cerrar</a>
         </dialog>
       </div>
+      <section class="carrousel">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../assets/images/quienes.webp" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="../assets/images/contacto-nueva-bn.jpeg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="../assets/images/home-nuevo2-bn.jpeg" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
@@ -269,7 +277,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="../assets/js/quienes-somos.js"></script>
 
+    <script src="../assets/js/quienes-somos.js"></script>
   </body>
 </html>

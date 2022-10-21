@@ -59,7 +59,7 @@ a,
 a:focus,
 a:hover,
 a:active {
-  text-decoration: none;
+  text-decoration: none !important;
   color: inherit;
   outline: none;
   background-color: transparent;
@@ -121,10 +121,6 @@ textarea {
 /* Utility classes     */
 /* ------------------- */
 
-main {
-  background-color: #000;
-}
-
 .flex {
   display: flex;
   gap: var(--gap, 1rem);
@@ -161,6 +157,10 @@ main {
   background-color: #000;
   border-bottom: 2px solid #fff;
   padding-bottom: 1rem;
+}
+
+.logo {
+  max-width: 150px;
 }
 
 .nav-link {
@@ -255,6 +255,9 @@ main {
 /* ------------------- */
 /* Main                */
 /* ------------------- */
+main {
+  background-color: #000;
+}
 
 .main {
   background-color: #000;

@@ -1,5 +1,5 @@
 .hero-title-terminadas {
-  background-color: var(--color-red);
+  background-color: #000;
   padding: 0.8rem;
   color: #fff;
 }
@@ -7,7 +7,7 @@
 /* SINOPSIS   */
 
 .card-terminadas {
-  margin-top: 0.5rem;
+  padding-top: 0.5rem;
   margin-bottom: 2rem;
   display: flex;
 }
@@ -17,21 +17,23 @@
 }
 
 .title-peliculas-terminadas {
-  color: var(--color-red);
+  color: #fff;
   font-size: 2.5rem;
   margin-block: 1rem;
   text-transform: uppercase;
 }
 
 .titulo-sinopsis-terminadas {
-  background-color: var(--color-grey);
+  background-color: #000;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
+  text-transform: uppercase;
 }
 
 .text-sinopsis-terminadas {
   padding: 1rem;
   font-size: 1.1rem;
+  color: #fff;
 }
 
 .disponible {
@@ -45,6 +47,8 @@
   gap: 0.5rem;
   align-items: center;
 }
+
+/* TRAILER */
 
 .trailer {
   cursor: pointer;
@@ -68,6 +72,7 @@
   font-size: 1.3rem;
   display: flex;
   gap: 1rem;
+  color: #fff;
 }
 
 .ficha > * {
@@ -75,7 +80,7 @@
 }
 
 .titulo-ficha {
-  color: var(--color-red);
+  color: #fff;
 }
 
 /* TRAILER */

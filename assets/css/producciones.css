@@ -17,9 +17,13 @@
 
 /* CARDS SIZES */
 
+.img-card {
+  max-height: 450px;
+}
+
 .cards-terminadas .card > img {
   max-width: 280px;
-  height: 400px;
+  min-height: 400px;
 }
 
 .cards-terminadas .card {
@@ -80,50 +84,9 @@
   opacity: 0.8;
 }
 
-/* .card-title {
-  margin-top: 0.3rem;
-  background-color: #bfbfbf;
-  color: #000;
-  padding: 1rem;
-  font-family: cabin, sans-serif;
-  font-weight: 700;
-  font-size: 1.2rem;
-  min-width: 230px;
-  text-align: center;
-  min-height: 78px;
-  width: 100%;
-}
-.btn-terminadas {
-  display: inline-block;
-  border: none;
-  border-radius: 20px;
-  background-color: var(--color-bg);
-  color: #fff;
-  font-family: cabin, sans-serif;
-  font-weight: 500;
-  font-size: 1.188rem;
-  padding-inline: 3rem;
-  padding-block: 0.5rem;
-  margin-top: -1rem;
-  text-decoration: none;
-}
-
-.btn-terminadas:hover {
-  margin-top: -0.95rem;
-  transition: 0.3s;
-  background-color: var(--color-grey);
-  color: #fff;
-} */
-
 /* ------------------- */
 /* Responsive    */
 /* ------------------- */
-
-@media (min-width: 700px) {
-  .img-card {
-    max-height: 450px;
-  }
-}
 
 @media (max-width: 600px) {
   .cards-peiliculas-desarrollo .card {
@@ -138,5 +101,12 @@
 
   .cards-terminadas .card {
     max-width: none;
+  }
+}
+
+@media (max-width: 330px) {
+  .hero-title {
+    padding-inline: 0.3rem;
+    padding-block: 2rem;
   }
 }

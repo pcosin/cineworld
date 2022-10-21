@@ -98,6 +98,13 @@ dialog[open] {
   }
 }
 
+/* CARROUSEL */
+.carousel {
+  max-width: 70%;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
 /* MEDIA QUERYS */
 
 @media (max-width: 768px) {

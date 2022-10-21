@@ -1,3 +1,5 @@
+// MODAL
+
 const buttonOpenDiego = document.getElementById("btnDiego");
 const buttonOpenMariana = document.getElementById("btnMariana");
 
@@ -6,16 +8,11 @@ const modal2 = document.getElementById("modal-mariana");
 
 const buttonCerrar = document.querySelectorAll(".btn-cerrar");
 
-console.log(buttonCerrar);
-
 buttonOpenDiego.addEventListener("click", () => {
-  console.log("hola1");
   modal.showModal();
 });
 
 buttonOpenMariana.addEventListener("click", () => {
-  console.log("hola2");
-
   modal2.showModal();
 });
 
@@ -25,3 +22,17 @@ buttonCerrar.forEach((el) => {
     modal2.close();
   });
 });
+
+document.addEventListener(
+  "click",
+  (event) => {
+    if (event.target === modal2 || event.target === modal) {
+      modal2.close();
+      modal.close();
+    }
+  },
+  false
+);
+
+// SLIDER
+const carousel = new bootstrap.Carousel("#myCarousel");
