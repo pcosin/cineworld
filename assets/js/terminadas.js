@@ -1,25 +1,28 @@
-var splide = new Splide("#main-carousel", {
+let splide = new Splide("#main_carousel", {
   pagination: false,
 });
 
-var thumbnails = document.getElementsByClassName("thumbnail");
-var current;
+let thumbnails = document.getElementsByClassName("thumbnail");
+let current = 0;
 
-for (var i = 0; i < thumbnails.length; i++) {
+for (let i = 0; i < thumbnails.length; i++) {
   initThumbnail(thumbnails[i], i);
 }
 
 function initThumbnail(thumbnail, index) {
-  thumbnail.addEventListener("click", function () {
+  thumbnail.addEventListener("click", () => {
     splide.go(index);
-    console.log('click')
+    console.log(index);
   });
 }
-splide.on("mounted move", function () {
-  var thumbnail = thumbnails[splide.index];
+splide.on("mounted move", () => {
+  let thumbnail = thumbnails[splide.index];
+  console.log(thumbnail);
+  console.log(current);
 
   if (thumbnail) {
     if (current) {
+      console.log(current);
       current.classList.remove("is-active");
     }
     thumbnail.classList.add("is-active");
@@ -28,4 +31,3 @@ splide.on("mounted move", function () {
 });
 
 splide.mount();
-
