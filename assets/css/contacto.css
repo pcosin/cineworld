@@ -28,7 +28,7 @@
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 22px;
-  font-family: cabin, sans-serif;
+  font-family: "inter";
   color: #000;
 }
 
@@ -36,7 +36,7 @@
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 22px;
-  font-family: bebas-neue, sans-serif;
+
   color: #000;
   padding-bottom: 0.7rem;
 }
@@ -60,7 +60,7 @@ textarea {
 }
 
 .btn-contacto {
-  background-color: var(--color-red);
+  background-color: #000;
   color: #fff;
   cursor: pointer;
   border: none;
@@ -83,7 +83,7 @@ textarea {
 }
 
 .error-icon,
-.succes-icon {
+.success-icon {
   position: absolute;
   right: 0;
   padding: 10px 10px;

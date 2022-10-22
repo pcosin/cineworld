@@ -105,6 +105,9 @@ dialog[open] {
   padding-bottom: 4rem;
 }
 
+.carousel-item img {
+  max-height: 500px;
+}
 /* MEDIA QUERYS */
 
 @media (max-width: 768px) {
@@ -136,6 +139,11 @@ dialog[open] {
 }
 
 @media (max-width: 425px) {
+  .names { padding-block: 0;
+    padding-bottom: 2rem;
+    padding-inline: 0;
+
+  }
   .names-inside img {
     max-width: 100px;
   }
@@ -143,4 +151,8 @@ dialog[open] {
   .names-inside h3 {
     font-size: 1.3rem;
   }
+
+  .carousel {
+    max-width: 95%;
+   
 }
