@@ -4,6 +4,12 @@
   color: #fff;
 }
 
+/* BOTON VOLVER */
+
+.btn-volver {
+  margin-top: 1rem;
+}
+
 /* SINOPSIS   */
 
 .card-terminadas {
@@ -12,8 +18,8 @@
   display: flex;
 }
 
-.card-terminadas * {
-  width: 100%;
+.card-terminadas > div {
+  flex-basis: 100%;
 }
 
 .title-peliculas-terminadas {
@@ -55,14 +61,17 @@
   background-color: #000;
   color: #fff;
   text-decoration: none;
-  padding: 0.5rem 2rem;
+  padding-block: 1.5rem;
+  font-size: 2rem;
 }
 
 /* SELECCION OFICIAL */
 
-.container-seleccion h4 {
+.container-seleccion h3 {
   padding: 0.5rem;
   text-align: center;
+  color: #fff;
+  font-size: 1.4rem;
 }
 
 /* FICHA TECNICA */

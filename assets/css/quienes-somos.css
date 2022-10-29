@@ -107,6 +107,7 @@ dialog[open] {
 
 .carousel-item img {
   max-height: 500px;
+  object-fit: contain ;
 }
 /* MEDIA QUERYS */
 
