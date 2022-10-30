@@ -9,6 +9,7 @@
 
     <!-- Estilos de css -->
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/producciones.css" />
     <link rel="stylesheet" href="/assets/css/peliculas-terminadas.css" />
 
     <!-- Estilos de Boostrap 5 -->
@@ -18,20 +19,22 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <!-- SPLIDE -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.3.3/dist/css/splide.min.css"
     />
 
-    <title>CINEWORLD || El sueño de Emma</title>
+    <title>CINEWORLD || Entre Ríos</title>
   </head>
   <body>
     <header class="header">
       <nav class="navbar navbar-expand-lg navbar-light container">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html"
-            ><img class="logo" src="../assets/images/LOGOCW-B.png" alt="logo de CINEWORLD"
+            ><img
+              class="logo"
+              src="../assets/images/LOGOCW-B.png"
+              alt="logo de CINEWORLD"
           /></a>
           <button
             class="navbar-toggler"
@@ -44,7 +47,10 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavDropdown"
+          >
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a
@@ -55,61 +61,70 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link hover-underline-animation active" href="./quienes-somos.html"
+                <a
+                  class="nav-link hover-underline-animation active"
+                  href="./quienes-somos.html"
                   >Quienes somos</a
                 >
               </li>
 
               <li class="nav-item">
-                <a class="nav-link hover-underline-animation" href="./producciones.html">
+                <a
+                  class="nav-link hover-underline-animation"
+                  href="./producciones.html"
+                >
                   Producciones
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link hover-underline-animation" href="./contacto.html">Contacto</a>
+                <a
+                  class="nav-link hover-underline-animation"
+                  href="./contacto.html"
+                  >Contacto</a
+                >
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-
     <main class="main-producciones">
       <section class="container">
-        <input class="btn-volver" type="button" value="Volver" onclick="history.back()" />
+        <input
+          class="btn-volver"
+          type="button"
+          value="Volver"
+          onclick="history.back()"
+        />
+
         <div class="card-terminadas">
           <div>
-            <img class="img-desarrollo" src="../assets/images/emma/el-sueno-de-emma.webp" alt="" />
+            <img
+              class="img-desarrollo"
+              src="../assets/images/entre-rios/entre-rios.webp"
+              alt="Poster de la película"
+            />
           </div>
           <div class="text-sinopsis-terminadas">
-            <h2 class="title-peliculas-terminadas">El sueño de Emma</h2>
+            <h2 class="title-peliculas-terminadas">Entre Ríos</h2>
             <div class="titulo-sinopsis-terminadas"><h3>Sinopsis</h3></div>
             <p>
-              Antonio, un fotógrafo argentino que goza de cierto reconocimiento, viaja por a Madrid
-              para dar un seminario sobre el proceso creativo.
+              Emanuel viaja a visitar a su abuela que vive en el campo, a quien
+              cree que verá por última vez. Su madre la esta cuidando y ha
+              decidido reservarse el derecho de comunicarle el diagnóstico
+              desfavorable ya que cree que es lo mejor para ella. Su nieto no
+              acepta esta decisión, pero tampoco está dispuesto a blanquear su
+              sexualidad ante la mirada de su abuela.
             </p>
-            <p>
-              Cuando se viaja solo, los tiempos son diferentes y más aún cuando se vuelve a una
-              ciudad que uno ama pero de la que se fue hace años y que guarda historias de otros
-              tiempos.
-            </p>
-            <p>
-              Recién instalado en Lavapiés, Antonio recibe el llamado de Sara, su ex novia, una
-              consagrada actriz española, casada y con un pequeño hijo, quien, para su sorpresa, le
-              escribe para verlo.
-            </p>
-            <p>
-              Este reencuentro inesperado abre una nueva oportunidad para explorar sus sentimientos
-              más sinceros, pero solo tendrán una semana en Madrid.
-            </p>
-            <p>
-              SELECCIONADO EN EL FORO DE COPRODUCCIÓN DE PLATINO INDUSTRIA - FESTIVAL INTERNACIONAL
-              DE CINE DE SAN SEBASTIÁN
-            </p>
-            <p>
-              DIRIGIDO POR EZEQUIEL TRONCONI Y DIEGO CORSINI ESCRITO POR EZEQUIEL TRONCONI
-              COPRODUCCIÓN HISPANO-ARGENTINA
-            </p>
+            <div class="disponible">
+              <h5>Disponible en:</h5>
+              <div class="disponible_films">
+                <a href="https://www.primevideo.com/" target="_blank"
+                  ><img src="../assets/images/disponibles/amazon.webp" alt=""
+                /></a>
+              </div>
+            </div>
+
             <a href="#trailer" class="trailer">Ver Trailer</a>
           </div>
         </div>
@@ -119,52 +134,51 @@
       </div>
       <section class="container ficha">
         <div class="ficha-left">
-          <p class="text-ficha"><span class="titulo-ficha">Dirección: </span>Germán Vilche</p>
           <p class="text-ficha">
-            <span class="titulo-ficha">Producción ejecutiva: </span>Sol Aramburu, Paula Magnani,
-            Diego Corsini
+            <span class="titulo-ficha">Dirigida por: </span>Nelson Schmunk
           </p>
           <p class="text-ficha">
-            <span class="titulo-ficha">Producción: </span>Germán Vilche, Sol Aramburu, Diego
-            Corsini, Mariana Cangas, Esteban Robles
+            <span class="titulo-ficha">Asistente de dirección: </span>Héctor Benicelli
           </p>
           <p class="text-ficha">
-            <span class="titulo-ficha">Co-producción: </span>Sarturo Pereyra, Juan Bernadrdo
-            Gonzalez P., Armando Patino
+            <span class="titulo-ficha">Guionista: </span>Nelson Schmunk
+          </p>
+        
+          <p class="text-ficha">
+            <span class="titulo-ficha">Productores Ejecutivos: </span>Alexis Trigo, Julia Francucci
           </p>
           <p class="text-ficha">
-            <span class="titulo-ficha">Dirección de producción: </span>Verónica Bordón
+            <span class="titulo-ficha">Productor asociado: </span>Diego Corsini
           </p>
           <p class="text-ficha">
-            <span class="titulo-ficha">Productores asociados: </span>Max Chaves, Tino De La Huerta,
-            Doyla Morales
-          </p>
-          <p class="text-ficha">
-            <span class="titulo-ficha">Guión: </span>Germán Vilche, Federico Arzeno, Adrián Caram
-          </p>
-          <p class="text-ficha">
-            <span class="titulo-ficha">Dirección de fotografía: </span>Germán Vilche, Lucas Guardia
+            <span class="titulo-ficha">Jefe de Producción: </span>Leandro Hayman
           </p>
         </div>
         <div class="ficha-rigth">
           <p class="text-ficha">
-            <span class="titulo-ficha">Música original: </span>Ignacio Gabriel
-          </p>
-          <p class="text-ficha"><span class="titulo-ficha">Sonido: </span>Nahuel Reyes Sosa</p>
-          <p class="text-ficha"><span class="titulo-ficha">Montaje: </span>Juan Pablo Di Bitonto</p>
-          <p class="text-ficha">
-            <span class="titulo-ficha">Dirección de arte: </span>Sol Lorenzatti
-          </p>
-          <p class="text-ficha"><span class="titulo-ficha">Vestuario: </span>Paula Bianchini</p>
-          <p class="text-ficha">
-            <span class="titulo-ficha">Asistente de dirección: </span>Maximiliano Estomba
+            <span class="titulo-ficha">Fotografía: </span>Martín Benchimol
           </p>
           <p class="text-ficha">
-            <span class="titulo-ficha">Maquillaje y peinados: </span>Carolina Cerminato
+            <span class="titulo-ficha">Montaje: </span>Nelson Schmunk
+          </p>
+
+          <p class="text-ficha">
+            <span class="titulo-ficha"
+              >Música: </span
+            >Sebastián Romero Bernhardt
+          </p>
+
+          <p class="text-ficha">
+            <span class="titulo-ficha">Dirección de arte: </span>Leticia Nanoia
           </p>
           <p class="text-ficha">
-            <span class="titulo-ficha">Intérpretes: </span>Luthien Ramos, Sebastián Arzeno, Luis
-            Ziembrowsky, Verónica Intile, Lautaro Murray
+            <span class="titulo-ficha">Ambientación: </span>Marcos Di Liscia
+          </p>
+          <p class="text-ficha">
+            <span class="titulo-ficha">Jefe de maquillaje: </span>Wanda Sánchez
+          </p>
+          <p class="text-ficha">
+            <span class="titulo-ficha">Cast: </span>Eugenia Alonso, Javier De Pietro, Frida Erbes, Nito Dalinger, Joaquín Retaman.
           </p>
         </div>
       </section>
@@ -172,41 +186,40 @@
       <div class="hero-title-terminadas">
         <h2 class="text-center">Trailer</h2>
       </div>
-      <section class="container container-trailer" id="trailer"></section>
+      <section class="container-trailer" id="trailer">
+        <iframe
+          class="actAsDiv"
+          src="https://www.youtube.com/embed/MIp_CbgFKm4"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </section>
 
       <div class="hero-title-terminadas">
         <h2 class="text-center">Galería</h2>
       </div>
       <section class="container container-galeria">
-        <section id="main_carousel" class="splide" aria-label="My Awesome Gallery">
+        <section
+          id="main_carousel"
+          class="splide"
+          aria-label="My Awesome Gallery"
+        >
           <div class="splide__track">
             <ul class="splide__list">
               <li class="splide__slide">
-                <img src="../assets/images/emma/1-emma.webp" alt="" />
+                <img src="../assets/images/encanto/1-encanto.webp" alt="" />
               </li>
               <li class="splide__slide">
-                <img src="../assets/images/emma/2-emma.webp" alt="" />
+                <img src="../assets/images/encanto/2-encanto.webp" alt="" />
               </li>
               <li class="splide__slide">
-                <img src="../assets/images/emma/3-emma.webp" alt="" />
+                <img src="../assets/images/encanto/3-encanto.webp" alt="" />
               </li>
               <li class="splide__slide">
-                <img src="../assets/images/emma/4-emma.webp" alt="" />
+                <img src="../assets/images/encanto/4-encanto.webp" alt="" />
               </li>
               <li class="splide__slide">
-                <img src="../assets/images/emma/5-emma.webp" alt="" />
-              </li>
-              <li class="splide__slide">
-                <img src="../assets/images/emma/6-emma.webp" alt="" />
-              </li>
-              <li class="splide__slide">
-                <img src="../assets/images/emma/7-emma.webp" alt="" />
-              </li>
-              <li class="splide__slide">
-                <img src="../assets/images/emma/8-emma.webp" alt="" />
-              </li>
-              <li class="splide__slide">
-                <img src="../assets/images/emma/9-emma.webp" alt="" />
+                <img src="../assets/images/encanto/5-encanto.webp" alt="" />
               </li>
             </ul>
           </div>
@@ -214,31 +227,19 @@
 
         <ul id="thumbnails" class="thumbnails">
           <li class="thumbnail">
-            <img src="../assets/images/emma/1-emma.webp" alt="" />
+            <img src="../assets/images/encanto/1-encanto.webp" alt="" />
           </li>
           <li class="thumbnail">
-            <img src="../assets/images/emma/2-emma.webp" alt="" />
+            <img src="../assets/images/encanto/2-encanto.webp" alt="" />
           </li>
           <li class="thumbnail">
-            <img src="../assets/images/emma/3-emma.webp" alt="" />
+            <img src="../assets/images/encanto/3-encanto.webp" alt="" />
           </li>
           <li class="thumbnail">
-            <img src="../assets/images/emma/4-emma.webp" alt="" />
+            <img src="../assets/images/encanto/4-encanto.webp" alt="" />
           </li>
           <li class="thumbnail">
-            <img src="../assets/images/emma/5-emma.webp" alt="" />
-          </li>
-          <li class="thumbnail">
-            <img src="../assets/images/emma/6-emma.webp" alt="" />
-          </li>
-          <li class="thumbnail">
-            <img src="../assets/images/emma/7-emma.webp" alt="" />
-          </li>
-          <li class="thumbnail">
-            <img src="../assets/images/emma/8-emma.webp" alt="" />
-          </li>
-          <li class="thumbnail">
-            <img src="../assets/images/emma/9-emma.webp" alt="" />
+            <img src="../assets/images/encanto/5-encanto.webp" alt="" />
           </li>
         </ul>
       </section>
@@ -260,7 +261,11 @@
           <div class="footer-rigth">
             <h3>contactanos</h3>
             <ul class="lista-footer">
-              <li><a href="mailto:info@cineworldmedia.com">info@cineworldmedia.com</a></li>
+              <li>
+                <a href="mailto:info@cineworldmedia.com"
+                  >info@cineworldmedia.com</a
+                >
+              </li>
             </ul>
             <h3>SEGUINOS EN REDES SOCIALES</h3>
             <div class="redes-sociales-wrapper">
@@ -270,7 +275,9 @@
               <a href="https://twitter.com/CineworldMedia" target="_blank"
                 ><i class="fa-brands fa-twitter fa-xl"></i
               ></a>
-              <a href="https://www.instagram.com/cineworldmedia/?hl=es" target="_blank"
+              <a
+                href="https://www.instagram.com/cineworldmedia/?hl=es"
+                target="_blank"
                 ><i class="fa-brands fa-instagram fa-xl"></i
               ></a>
             </div>
@@ -280,7 +287,10 @@
     </footer>
 
     <!-- Font Awsome -->
-    <script src="https://kit.fontawesome.com/aa037f8851.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/aa037f8851.js"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.3.3/dist/js/splide.min.js"></script>
 
@@ -292,5 +302,6 @@
     ></script>
 
     <script src="../assets/js/terminadas.js"></script>
+    <!-- <script src="../assets/js/producciones.js"></script> -->
   </body>
 </html>
