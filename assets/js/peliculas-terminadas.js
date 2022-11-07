@@ -2,7 +2,7 @@ const peliculasTerminadas = [
   {
     id: 1,
     title: "El sueño de Emma",
-    img: "/assets/images/emma/el-sueno-de-emma.webp",
+    img: "/assets/images/emma/emma-grande.webp",
     route: "el-sueno-de-emma.html",
   },
   {

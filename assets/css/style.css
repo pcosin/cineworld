@@ -270,6 +270,8 @@ main {
   padding-inline: 2em;
   margin-inline: auto;
   max-width: 80rem;
+  display: flex;
+  justify-content: center;
 }
 
 /* ------------------- */
