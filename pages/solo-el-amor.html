@@ -8,6 +8,9 @@
     <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico" />
 
     <!-- Estilos de css -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/producciones.css" />
     <link rel="stylesheet" href="/assets/css/peliculas-terminadas.css" />
@@ -75,28 +78,39 @@
     </header>
     <main class="main-producciones">
       <section class="container">
-      <input class="btn-volver" type="button" value="Volver" onclick="history.back()" />
+        <input class="btn-volver" type="button" value="Volver" onclick="history.back()" />
 
         <div class="card-terminadas">
           <div>
-            <img class="img-desarrollo" src="../assets/images/solo-el-amor/solo-el-amor-grande.jpeg" alt="" />
+            <img
+              class="img-desarrollo"
+              src="../assets/images/solo-el-amor/solo-el-amor-grande.jpeg"
+              alt=""
+            />
           </div>
-          <div class="text-sinopsis-terminadas">
+          <div class="text-sinopsis-terminadas" data-aos="fade-in" data-aos-duration="500">
             <h2 class="title-peliculas-terminadas">Solo el amor</h2>
             <div class="titulo-sinopsis-terminadas"><h3>Sinopsis</h3></div>
             <p>
-              Emma es una joven abogada que vive en un mundo estructurado, Noah es un cantautor bohemio con deseos de llegar al éxito con su banda de garage. A pesar de las diferencias de sus mundos de pertenencia, se enamoran y se sumergen en una historia de crecimiento que los lleva a entender quiénes son y a jugarse por lo que realmente anhelan, al costo que sea.
+              Emma es una joven abogada que vive en un mundo estructurado, Noah es un cantautor
+              bohemio con deseos de llegar al éxito con su banda de garage. A pesar de las
+              diferencias de sus mundos de pertenencia, se enamoran y se sumergen en una historia de
+              crecimiento que los lleva a entender quiénes son y a jugarse por lo que realmente
+              anhelan, al costo que sea.
             </p>
             <div class="disponible">
               <h5>Disponible en:</h5>
               <div class="disponible_films">
-              <a href="https://www.primevideo.com/" target="_blank"><img src="../assets/images/disponibles/amazon.webp" alt=""></a>
-              <a href="https://www.filmin.es/" target="_blank"><img src="../assets/images/disponibles/filmin.png" alt=""></a>
-              <a href="https://flixole.com/" target="_blank"><img src="../assets/images/disponibles/flixole.jpeg" alt=""></a>
-              <a href="https://web.flow.com.ar/" target="_blank"><img src="../assets/images/disponibles/flow.png" alt=""></a>
-              <a href="https://rakuten.tv/es/lists/free-peliculas-gratis" target="_blank"><img src="../assets/images/disponibles/rakuten.png" alt=""></a>
+                <a href="https://www.netflix.com/" target="_blank"
+                  ><img src="../assets/images/disponibles/netflix logo.jpg" alt=""
+                /></a>
+                <a href="https://www.youtube.com/channel/UCpBKkwjT_Ppfn8Mqz_lr5vw" target="_blank"
+                  ><img src="../assets/images/disponibles/youtube.png" alt=""
+                /></a>
+                <a href="https://open.spotify.com/album/3Mz7S3IhYkChLzZ1QPzRkB" target="_blank"
+                  ><img src="../assets/images/disponibles/spotify.png" alt=""
+                /></a>
               </div>
-
             </div>
 
             <a href="#trailer" class="trailer">Ver Trailer</a>
@@ -106,17 +120,18 @@
       <div class="hero-title-terminadas">
         <h2 class="text-center">Ficha técnica</h2>
       </div>
-      <section class="container ficha">
+      <section class="container ficha" data-aos="fade-in" data-aos-duration="3000">
         <div class="ficha-left">
           <p class="text-ficha">
             <span class="titulo-ficha">Directores: </span>Diego Corsini y Andy Caballero
           </p>
           <p class="text-ficha">
-            <span class="titulo-ficha">Producida por: </span>Matías Levinson, Mariana Cangas,
-            Diego Corsini, Matías Lértora y Yamila Saud
+            <span class="titulo-ficha">Producida por: </span>Matías Levinson, Mariana Cangas, Diego
+            Corsini, Matías Lértora y Yamila Saud
           </p>
           <p class="text-ficha">
-            <span class="titulo-ficha">Productores Ejecutivos: </span>Mariana Cangas y Matías Lértora
+            <span class="titulo-ficha">Productores Ejecutivos: </span>Mariana Cangas y Matías
+            Lértora
           </p>
           <p class="text-ficha">
             <span class="titulo-ficha">Jefe de Producción: </span>Clarisa Oliveri
@@ -129,40 +144,22 @@
           </p>
           <p class="text-ficha">
             <span class="titulo-ficha">Director de Fotografía: </span>Sol Lopartín
-         
-          <p class="text-ficha"><span class="titulo-ficha">Dirección de arte: </span>Coca Oderigo</p>
+          </p>
+
           <p class="text-ficha"><span class="titulo-ficha">Compaginador: </span>Alberto Ponce</p>
         </div>
         <div class="ficha-rigth">
           <p class="text-ficha">
             <span class="titulo-ficha">Dirección de Sonido: </span>Jésica Suárez
           </p>
-          
-          <p class="text-ficha">
-            <span class="titulo-ficha">Productor musical: </span>Fer Dux
-          </p>
-          
-          <p class="text-ficha">
-            <span class="titulo-ficha">Compositor: </span>Lucho Cervi
-          </p>
-          <p class="text-ficha">
-            <span class="titulo-ficha">CAST:</br> </span>Noah - Franco Masini</br>
 
-            Emma - Yamila Saud</br>
-            
-            Eric - Facundo Gambandé</br>
-            
-            Danny - Victorio D'Alessandro</br>
-            
-            Maia - Andrea Frigerio</br>
-            
-            César - Gerardo Romando</br>
-            
-            Gato - Bautista Lena</br>
-            
-            Laura - Josefina Ramírez</br>
-            
-            Paco - Noel Schajris</br>
+          <p class="text-ficha"><span class="titulo-ficha">Productor musical: </span>Fer Dux</p>
+
+          <p class="text-ficha"><span class="titulo-ficha">Compositor: </span>Lucho Cervi</p>
+          <p class="text-ficha">
+            <span class="titulo-ficha">Intérpretes: </span>Franco Masini, Yamila Saud, Facundo
+            Gambandé, Victorio D'Alessandro, Andrea Frigerio, Gerardo Romando, Bautista Lena,
+            Josefina Ramírez, Noel Schajris
           </p>
         </div>
       </section>
@@ -170,7 +167,7 @@
       <div class="hero-title-terminadas">
         <h2 class="text-center">Trailer</h2>
       </div>
-      <section class="container-trailer" id="trailer">
+      <section class="container-trailer" id="trailer" data-aos="fade-in" data-aos-duration="3000">
         <iframe
           class="actAsDiv"
           src="https://www.youtube.com/embed/9tYh_r7I0zk"
@@ -182,12 +179,15 @@
       <div class="hero-title-terminadas">
         <h2 class="text-center">Galería</h2>
       </div>
-      <section class="container container-galeria">
+      <section class="container container-galeria" data-aos="fade-in" data-aos-duration="3000">
         <section id="main_carousel" class="splide" aria-label="My Awesome Gallery">
           <div class="splide__track">
             <ul class="splide__list">
               <li class="splide__slide">
-                <img src="../assets/images/solo-el-amor/solo-por-hoy-1.jpg" alt="imagen de la película" />
+                <img
+                  src="../assets/images/solo-el-amor/solo-por-hoy-1.jpg"
+                  alt="imagen de la película"
+                />
               </li>
               <li class="splide__slide">
                 <img src="../assets/images/solo-el-amor/solo-por-hoy-2.jpg" alt="" />
@@ -207,7 +207,6 @@
               <li class="splide__slide">
                 <img src="../assets/images/solo-el-amor/solo-por-hoy-7.jpg" alt="" />
               </li>
-            
             </ul>
           </div>
         </section>
@@ -234,7 +233,6 @@
           <li class="thumbnail">
             <img src="../assets/images/solo-el-amor/solo-por-hoy-7.jpg" alt="" />
           </li>
-     
         </ul>
       </section>
     </main>
@@ -286,7 +284,11 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
     <script src="../assets/js/terminadas.js"></script>
-    <!-- <script src="../assets/js/producciones.js"></script> -->
   </body>
 </html>

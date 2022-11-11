@@ -69,12 +69,14 @@ const validateForm = (formSelector) => {
     };
 
     formElement.addEventListener("submit", (event) => {
-      event.preventDefault();
       const formValid = validateAllFormGroups(formElement);
 
-      if (formValid) {
+      if (!formValid) {
+        event.preventDefault();
+      } else {
+        window.location.href = "../../pages/contact-redirect.html";
         resolve(formElement);
-        // sendMail();
+
         Swal.fire("Su mensaje ha sido enviado con éxito").then(function () {
           window.location = "../../index.html";
         });
@@ -94,32 +96,11 @@ const sendToAPI = (formElement) => {
       {}
     );
 
+  console.log(formObject);
+
   return formObject;
 };
 
 validateForm("[data-form]").then((formElement) => {
   sendToAPI(formElement);
-  sendMail(formElement);
 });
-
-const sendMail = (formElement) => {
-  const formObject = Array.from(formElement.elements)
-    .filter((element) => element.type !== "submit")
-    .reduce(
-      (accumulator, element) => ({
-        ...accumulator,
-        [element.id]: element.value,
-      }),
-      {}
-    );
-  const { name, email, mensaje } = formObject;
-
-  Email.send({
-    SecureToken: "1d82706e-5800-4180-8b6b-9e520ab7bb9d",
-    To: "info@cineworldmedia.com",
-    From: "info@cineworldmedia.com",
-    Subject: email,
-    Body: `Mensaje de ${name}:
-     ${mensaje}`,
-  });
-};

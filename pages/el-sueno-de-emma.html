@@ -8,6 +8,8 @@
     <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico" />
 
     <!-- Estilos de css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/peliculas-terminadas.css" />
 
@@ -81,35 +83,17 @@
           <div>
             <img class="img-desarrollo" src="../assets/images/emma/emma-grande.webp" alt="" />
           </div>
-          <div class="text-sinopsis-terminadas">
+          <div class="text-sinopsis-terminadas" data-aos="fade-in" data-aos-duration="500">
             <h2 class="title-peliculas-terminadas">El sueño de Emma</h2>
             <div class="titulo-sinopsis-terminadas"><h3>Sinopsis</h3></div>
             <p>
-              Antonio, un fotógrafo argentino que goza de cierto reconocimiento, viaja por a Madrid
-              para dar un seminario sobre el proceso creativo.
+              Emma (16) y su papá Marcos (48) viven en una casa humilde en el Delta del Tigre, una
+              zona de ríos cercana a Buenos Aires. Emma está ensayando una obra de Shakespeare en el
+              colegio y sueña con viajar a Londres. Un día sucede lo impensa- do, la maestra le
+              consigue una beca de intercambio cultural con Inglate- rra. La idea de estar separados
+              los desarma y juntos tendrán que aprender otra forma posible de amar.
             </p>
-            <p>
-              Cuando se viaja solo, los tiempos son diferentes y más aún cuando se vuelve a una
-              ciudad que uno ama pero de la que se fue hace años y que guarda historias de otros
-              tiempos.
-            </p>
-            <p>
-              Recién instalado en Lavapiés, Antonio recibe el llamado de Sara, su ex novia, una
-              consagrada actriz española, casada y con un pequeño hijo, quien, para su sorpresa, le
-              escribe para verlo.
-            </p>
-            <p>
-              Este reencuentro inesperado abre una nueva oportunidad para explorar sus sentimientos
-              más sinceros, pero solo tendrán una semana en Madrid.
-            </p>
-            <p>
-              SELECCIONADO EN EL FORO DE COPRODUCCIÓN DE PLATINO INDUSTRIA - FESTIVAL INTERNACIONAL
-              DE CINE DE SAN SEBASTIÁN
-            </p>
-            <p>
-              DIRIGIDO POR EZEQUIEL TRONCONI Y DIEGO CORSINI ESCRITO POR EZEQUIEL TRONCONI
-              COPRODUCCIÓN HISPANO-ARGENTINA
-            </p>
+            <p>Próximo estreno 2023</p>
             <a href="#trailer" class="trailer">Ver Trailer</a>
           </div>
         </div>
@@ -117,7 +101,7 @@
       <div class="hero-title-terminadas">
         <h2 class="text-center">Ficha técnica</h2>
       </div>
-      <section class="container ficha">
+      <section class="container ficha" data-aos="fade-in" data-aos-duration="3000">
         <div class="ficha-left">
           <p class="text-ficha"><span class="titulo-ficha">Dirección: </span>Germán Vilche</p>
           <p class="text-ficha">
@@ -162,9 +146,9 @@
           <p class="text-ficha">
             <span class="titulo-ficha">Maquillaje y peinados: </span>Carolina Cerminato
           </p>
-          <p class="text-ficha">
+          <br class="text-ficha">
             <span class="titulo-ficha">Intérpretes: </span>Luthien Ramos, Sebastián Arzeno, Luis
-            Ziembrowsky, Verónica Intile, Lautaro Murray
+            Ziembrowski, Verónica Intile, Lautaro Murray
           </p>
         </div>
       </section>
@@ -172,12 +156,12 @@
       <div class="hero-title-terminadas">
         <h2 class="text-center">Trailer</h2>
       </div>
-      <section class="container container-trailer" id="trailer"></section>
+      <section class="container container-trailer" id="trailer" data-aos="fade-in" data-aos-duration="3000"></section>
 
       <div class="hero-title-terminadas">
         <h2 class="text-center">Galería</h2>
       </div>
-      <section class="container container-galeria">
+      <section class="container container-galeria" data-aos="fade-in" data-aos-duration="3000">
         <section id="main_carousel" class="splide" aria-label="My Awesome Gallery">
           <div class="splide__track">
             <ul class="splide__list">
@@ -290,6 +274,10 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
     <script src="../assets/js/terminadas.js"></script>
   </body>

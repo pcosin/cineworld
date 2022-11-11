@@ -19,6 +19,7 @@
 
 .img-card {
   max-height: 450px;
+  object-fit: contain;
 }
 
 .cards-terminadas .card > img {
@@ -75,7 +76,6 @@
 
 .link-card {
   transition-timing-function: ease-in;
-  /* Quick on the way out */
   transition: 0.2s;
 }
 

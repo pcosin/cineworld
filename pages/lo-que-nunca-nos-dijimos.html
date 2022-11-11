@@ -8,6 +8,8 @@
     <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico" />
 
     <!-- Estilos de css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/producciones.css" />
     <link rel="stylesheet" href="/assets/css/peliculas-terminadas.css" />
@@ -85,7 +87,7 @@
               alt="Poster de la película"
             />
           </div>
-          <div class="text-sinopsis-terminadas">
+          <div class="text-sinopsis-terminadas" data-aos="fade-in" data-aos-duration="500">
             <h2 class="title-peliculas-terminadas">Lo que nunca nos dijimos</h2>
             <div class="titulo-sinopsis-terminadas"><h3>Sinopsis</h3></div>
             <p>
@@ -105,8 +107,8 @@
             <div class="disponible">
               <h5>Disponible en:</h5>
               <div class="disponible_films">
-                <a href="https://www.primevideo.com/" target="_blank"
-                  ><img src="../assets/images/disponibles/amazon.webp" alt=""
+                <a href="http://cine.ar/" target="_blank"
+                  ><img src="../assets/images/disponibles/cinearlogo.png" alt=""
                 /></a>
               </div>
             </div>
@@ -118,7 +120,7 @@
       <div class="hero-title-terminadas">
         <h2 class="text-center">Ficha técnica</h2>
       </div>
-      <section class="container ficha">
+      <section class="container ficha" data-aos="fade-in" data-aos-duration="3000">
         <div class="ficha-left">
           <p class="text-ficha">
             <span class="titulo-ficha">Dirercción: </span>Sebastián Sánchez Amunátegui
@@ -138,8 +140,8 @@
 
           <p class="text-ficha"><span class="titulo-ficha">Música: </span>Héctor Ruíz</p>
           <p class="text-ficha">
-            <span class="titulo-ficha">Cast: </span>F. Atencio, Ana María Picchio, Sandra Burgos,
-            Juan Gil Navarro, Catalina
+            <span class="titulo-ficha">Intérpretes: </span>F. Atencio, Ana María Picchio, Sandra
+            Burgos, Juan Gil Navarro, Catalina
           </p>
         </div>
       </section>
@@ -147,7 +149,7 @@
       <div class="hero-title-terminadas">
         <h2 class="text-center">Trailer</h2>
       </div>
-      <section class="container-trailer" id="trailer">
+      <section class="container-trailer" id="trailer" data-aos="fade-in" data-aos-duration="3000">
         <iframe
           class="actAsDiv"
           src="https://www.youtube.com/embed/C6-Pb_28seg"
@@ -159,7 +161,7 @@
       <div class="hero-title-terminadas">
         <h2 class="text-center">Galería</h2>
       </div>
-      <section class="container container-galeria">
+      <section class="container container-galeria" data-aos="fade-in" data-aos-duration="3000">
         <section id="main_carousel" class="splide" aria-label="My Awesome Gallery">
           <div class="splide__track">
             <ul class="splide__list">
@@ -317,7 +319,11 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
     <script src="../assets/js/terminadas.js"></script>
-    <!-- <script src="../assets/js/producciones.js"></script> -->
   </body>
 </html>

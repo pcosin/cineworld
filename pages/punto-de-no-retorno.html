@@ -8,6 +8,8 @@
     <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico" />
 
     <!-- Estilos de css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/producciones.css" />
     <link rel="stylesheet" href="/assets/css/peliculas-terminadas.css" />
@@ -85,7 +87,7 @@
               alt="poster de la película"
             />
           </div>
-          <div class="text-sinopsis-terminadas">
+          <div class="text-sinopsis-terminadas" data-aos="fade-in" data-aos-duration="500">
             <h2 class="title-peliculas-terminadas">Punto de no retorno</h2>
             <div class="titulo-sinopsis-terminadas"><h3>Sinopsis</h3></div>
             <p>
@@ -107,8 +109,8 @@
             <div class="disponible">
               <h5>Disponible en:</h5>
               <div class="disponible_films">
-                <a href="https://www.primevideo.com/" target="_blank"
-                  ><img src="../assets/images/disponibles/amazon.webp" alt=""
+                <a href="https://pdnr.fundacionambienteymedio.org/" target="_blank"
+                  ><img src="../assets/images/disponibles/mdioambiente.png" alt=""
                 /></a>
               </div>
             </div>
@@ -120,7 +122,7 @@
       <div class="hero-title-terminadas">
         <h2 class="text-center">Ficha técnica</h2>
       </div>
-      <section class="container ficha">
+      <section class="container ficha" data-aos="fade-in" data-aos-duration="3000">
         <div class="ficha-left">
           <p class="text-ficha">
             <span class="titulo-ficha">Dirigida por: </span>Nicolás Capellí, Diego Corsini
@@ -183,7 +185,7 @@
       <div class="hero-title-terminadas">
         <h2 class="text-center">Trailer</h2>
       </div>
-      <section class="container-trailer" id="trailer">
+      <section class="container-trailer" id="trailer" data-aos="fade-in" data-aos-duration="3000">
         <iframe
           class="actAsDiv"
           src="https://www.youtube.com/embed/Gk3f3H2xMYc"
@@ -239,8 +241,11 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <script src="../assets/js/terminadas.js"></script>
-    <!-- <script src="../assets/js/producciones.js"></script> -->
   </body>
 </html>

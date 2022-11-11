@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (id) {
     let peliculasId = peliculasDesarrollo.map((ele) => ele);
     peliculasId = peliculasId.filter((ele) => ele.id != id.innerHTML);
-    console.log(peliculasId);
     cardsProducciones(peliculasId, produccionesDesarrolloContainer);
   } else {
     cardsProducciones(peliculasDesarrollo, produccionesDesarrolloContainer);
