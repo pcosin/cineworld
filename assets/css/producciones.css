@@ -42,22 +42,31 @@
   background-color: #000;
 }
 
-.cards-en-desarrollo .card > img {
-  min-width: 400px;
-  max-height: 190px;
-  border: 1px solid black;
+.cards-en-desarrollo .card {
+  min-height: 300px;
+  background-color: #000;
 }
 
-.cards-en-desarrollo .card {
-  max-width: 400px;
+.cards-en-desarrollo .card > img {
+  max-width: 280px;
+  height: 400px;
 }
 
 .cards-video .card {
-  max-width: 350px;
+  max-width: 400px;
+  background-color: #000;
 }
 
 .cards-video > .card > img {
-  max-height: 250px;
+  min-width: 400px;
+  max-height: 190px;
+  border: 1px solid black;
+  background-color: #000;
+}
+
+.cards-publicidad .card {
+  max-width: 400px;
+  background-color: #000;
 }
 
 .cards-publicidad > .card > img {
