@@ -26,4 +26,11 @@ const peliculasDesarrollo = [
     img: "/assets/images/carlos/carlos.webp",
     route: "carlos.html",
   },
+  {
+    id: 5,
+    title: "22 Preguntas",
+    img: "/assets/images/22-preguntas/22-preguntas.webp",
+    route: "22-preguntas.html",
+  },
+  
 ];
