@@ -3,7 +3,7 @@ let splide = new Splide("#main_carousel", {
 });
 
 let thumbnails = document.getElementsByClassName("thumbnail");
-let current = 0;
+let current = null;
 
 for (let i = 0; i < thumbnails.length; i++) {
   initThumbnail(thumbnails[i], i);
@@ -12,17 +12,13 @@ for (let i = 0; i < thumbnails.length; i++) {
 function initThumbnail(thumbnail, index) {
   thumbnail.addEventListener("click", () => {
     splide.go(index);
-    console.log(index);
   });
 }
-splide.on("mounted move", () => {
-  let thumbnail = thumbnails[splide.index];
-  console.log(thumbnail);
-  console.log(current);
+splide.on("move", (newIndex) => {
+  let thumbnail = thumbnails[newIndex];
 
-  if (thumbnail) {
+  if (thumbnail && current !== thumbnail) {
     if (current) {
-      console.log(current);
       current.classList.remove("is-active");
     }
     thumbnail.classList.add("is-active");
